@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #E1E1E1;
+            text-align:justified;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            background-color: white;
+            max-width: 550px;
+            margin:50px auto;
+            padding: 30px 20px;
+            box-shadow: 3px 2px 6px rgb(150, 142, 132);
+        }
+        h1{
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 40px;
+            color: #0AC46E;
+            font-weight: bold;
+        }
+        .form-control{
+            font-family: Arial;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .form-control input[type="radio"],.form-control input[type="checkbox"]{
+            display: inline-block;
+            width: auto;
+        }
+        button {
+            background-color:#09b363;
+            border: 1px solid #777;
+            border-radius: 4px;
+            font-family: Arial;
+            font-size: 21px;
+            font-weight: bold;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Herald college kathmandu survey form</h1>
+    <form id="form">
+        <div class="form-control">
+            <label id="label-name">Name</label><br>
+            <input type="text" id="form-name" placeholder="Enter your name" style="padding-right: 360px; padding-bottom: 12px;">
+        </div>
+        <div class="form-control">
+            <label id="label-email">Email</label><br>
+            <input type="text" id="form-email" placeholder="Enter your email" style="padding-right: 360px; padding-bottom: 12px;">
+        </div>
+        <div class="form-control">
+            <label id="label-age">Age</label><br>
+            <input type="text" id="form-age" placeholder="Enter your age" style="padding-right: 360px; padding-bottom: 12px;">
+        </div>
+        <div class="form-control">
+            <label id="label-option">
+                Which option best describes you?
+            </label><br>
+            <p style="font-size: 6px;">
+                <select style="padding-right: 360px; padding-bottom: 8px;">
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Non-technical Staff</option>
+                    <option>other</option>
+                </select>
+            </p>
+        </div>
+        <div class="form-control">
+            <label id="label-recommend"> Would you recommend Herald College Kathmandu to a friend?</label><br>
+            <p>
+            <label>
+                <input type="radio">Yes</input>
+            </label><br>
+            <label>
+                <input type="radio"> No </input>
+            </label><br>
+            <label>
+                <input type="radio"> Maybe </input>
+            </label><br>
+            </p>
+        </div>
+        <div class="form-control">
+            <label id="language">Languages and Frameworks known
+                <small>(Check all that apply)</small>
+            </label><br>
+            <p>
+                <label>
+                    <input type="checkbox">C</input>
+                </label><br>
+                <label>
+                    <input type="checkbox">C++</input>
+                </label><br>
+                <label>
+                    <input type="checkbox">C#</input>
+                </label><br>
+                <label>
+                    <input type="checkbox">Java</input>
+                </label><br>
+                <label>
+                    <input type="checkbox">Python</input>
+                </label><br>
+                <label>
+                    <input type="checkbox">JavaScript</input>
+                </label><br>
+                <label>
+                    <input type="checkbox">React</input>
+                </label><br>
+                <label>
+                    <input type="checkbox">Angular</input>
+                </label><br>
+                <label>
+                    <input type="checkbox">Django</input>
+                </label><br>
+                <label>
+                    <input type="checkbox">Spring</input>
+                </label><br>
+            </p>
+        </div>
+  
+        <div class="form-control">
+            <label> Any comments or suggestions </label><br>
+            <textarea id="comment" placeholder="Enter your comment here" style="padding-right: 360px; padding-bottom: 15px;"> </textarea>
+        </div>
+        <button ahref="#">
+            Submit
+        </button>
+    </form>
+</body>
+</html>

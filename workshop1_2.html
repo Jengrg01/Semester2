@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caramel&family=Roboto&family=Rubik:ital@1&display=swap">
+    <link rel="stylesheet" href="./css/workshop1b.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>My Portfolio</title>
+    <style>
+        .form {
+        color:  #A77FBB;
+        display: flex;
+        padding: 2px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+
+        }
+        #sub{
+            border-radius: 25px;
+            border: 4px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="Logo">Immortelles<b>♡</b></div>
+            <ul class="Item">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">References</a></li>
+            </ul>
+            <div class="contacts">
+                <a href="https://www.facebook.com/jen.grg.35"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/jen_grg_01/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/jenisha-gurung-5a1069252/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="form">
+                <input type="search" id="sub" placeholder="Search...">
+                <button type="submit" id="search">Search</button>
+            </div>
+        </nav>
+
+        <div class="wrap">
+            <div class="cols collage0">
+                <span class="firstline">Hi</span>
+                <h1>I am a <span class="multitext">Student</span></h1>
+                <p>A student at Herald College Kathmandu and I'm currently in my first semester. I am pursuing a degree in Bachelors(Hons) in Computer Science. Come learn more about who I am !</p>
+                <div class="buttons">
+                    <button><a href="#">Download my CV</a></button>
+                    <button><a href="#">Learn about my community</a></button>
+                </div>
+            </div>
+            <div class="cols collage1">
+                <div class="images">
+                    <img src="./images/chibi-meaning.jpg" alt="me">
+                </div>
+            </div>
+        </div>
+        <footer>
+            @Copyright The SCB Company 2023- All Right Reserved.   
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".multitext",{
+            strings: ["Student","Coder","Creator"],
+            typeSpeed: 100,
+            backSpeed: 200,
+            loop: true
+        })
+    </script>
+</body>
+</html>

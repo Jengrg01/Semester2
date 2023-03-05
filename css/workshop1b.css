@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-weight: bolder;
+}
+body{
+    background-image: url('https://cdn2.vectorstock.com/i/1000x1000/26/36/cute-cat-in-a-cup-chocolate-vector-27212636.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color:#430D4B;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    line-height: 50px;
+    height: 60px;
+    z-index: 110;
+}
+.Logo{
+    font-family: Caramel;
+    display: flex;
+    font-size: 80px;
+    font-weight: bold;
+    color: #7B337D;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+b{
+    font-size: 50px;
+}
+.Item{
+    display: flex;
+}
+.Item li{
+    list-style: none;
+    margin: 25px;
+    font-weight: bold;
+}
+.Item li a{
+    font-family: Caramel;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #430D4B;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.Item li:hover a, .contacts a:hover{
+    color:#D499C6;
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contacts a{
+    font-size: 30px;
+    margin: 10px;
+    color:#512475;
+}
+.wrap{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 70px);
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    overflow: hidden;
+}
+.cols{
+    width: 50%;
+}
+.collage0{
+    width: 70%;
+    z-index: 5;
+}
+.firstline{
+    display: block;
+    position: relative;
+    font-size: 65px;
+    font-family: Caramel;
+}
+.firstline::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width:40px;
+    bottom: 10px;
+    background-color: #cc79b9;
+}
+h1{
+    display: block;
+    font-family: Caramel;
+    font-size: 60px;
+    font-weight: 900;
+
+}
+.multitext{
+    font-family: Caramel;
+    font-size: 60px;
+    color:#ad5499;
+    text-transform: capitalize;
+}
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+}
+.buttons{
+    width: 100%;
+    position: relative;
+    left: 50px;
+    padding-top: 20px;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #A77FBB;
+    background-color:#e7d7f1;
+    padding: 12px;
+    margin: 4px;
+    border-radius: 20px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow:0px 12px 10px #ac619b;
+}
+button a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #A77FBB;
+    word-spacing: 2px;
+}
+button:hover{
+    background-color: #D499C6;    
+}
+.images{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.images img{
+    position: relative;
+    height: 500px;
+    width: calc(100% - 70px);
+    float: left;
+    border-radius: 50%;
+    left: 180px;
+    top: 30px;
+}
+@media (max-width: 560px){
+    .container{
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+    }
+}
