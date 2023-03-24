@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font: 20px;
+            text-align: center;
+        }
+        #demo{
+            font-size: 30px;
+            text-align: center;
+        }
+        #clock {
+            font-size: 130px;
+            width: 700px;
+            margin: 150px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>The full date: </p>
+    <p id="demo"></p>
+    <div id="clock">12:00:00</div>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d;
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+            let currentTime = hour + ":"+ min + ":" + sec + am_pm;
+            document.getElementById("clock").innerHTML = currentTime;
+        }
+        showTime();
+    </script>
+</body>
+</html>

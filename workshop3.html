@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*function triarea(x,y){
+          return (x * y) / 2;
+        }
+       console.log(triarea(3,2))*/
+       /*function points(x,y){
+        let total = 2*x + 3*y;
+        return total;
+       }
+       console.log(points(5,7))*/
+       /*function name(a){
+        let greet = "Something" + " " + a;
+        return greet;
+       }
+       console.log(name("is better than nothing"))*/
+       /*function less(x,y){
+        let total = x + y;
+        if(total < 100){
+            return true;
+        }
+        else{
+            return false;
+        }
+       }
+       console.log(less(80,30))*/
+       /*function add(x){
+        let sum = 0
+        let n = 1
+        while (n <= x){
+            sum += n
+            n++
+        }
+        return sum;
+       }
+       console.log(add(20))*/
+       /*function oddishorevenish(x){
+        let y = x.toString()
+        let sum = 0
+        for(let i of y){
+            sum+=parseInt(i)
+        }
+        if (sum%2===0){
+            return "evenish";
+        }
+        return "oddish";
+       }
+       console.log(oddishorevenish(53))*/
+       /*function primeInRange(x,y){
+        let boolean = true
+        for(let z= x; z < y; z++){
+            for(let x = 2;x < z;x++){
+                if (z%x===0){
+                    boolean = false
+                }
+                boolean = true
+            }
+        }
+        return boolean
+       }
+       console.log(primeInRange(4,3))*/
+       /*const shiftToLeft = (a, b) => {
+        let x;
+        x = a * Math.pow(2, b);
+        return x;
+    };
+    console.log(shiftToLeft(4,5))*/
+    /*function binary(x){
+        let binary=x.toString(2);
+        return binary;
+    }
+    console.log(binary(3))*/
+    /*let score = 7;
+    const randomNum = Math.floor(Math.random() * 100) + 1;
+    console.log(`Guess the number between 1 and 100. You have ${score} guesses.`);
+    while (score > 0){
+        const user = prompt("Enter your guess: ");
+        if (user == randomNum){
+            console.log(`Congratulations! You actually guessed the correct answer :]!!! You guessed it in ${101 - score} guesses.`);
+            break;
+        }
+        else if (user > randomNum){
+            console.log("Your guess is greater than the number.");
+        }
+        else{
+            console.log("Your guess is lower than the number.");
+        } score--;
+        console.log(`You have ${score} guesses left.`);
+        if (score == 0) {
+            console.log(`Sorry, you ran out of guesses :(( Better luck next time! The number was ${randomNum}.`);
+        }
+        }*/
+/*const companies = [ { name: "ABC", category: "Finance", start: 1981, end: 2004 },
+{ name: "XYZ", category: "Retail", start: 1991, end: 20012 },
+{ name: "DGF", category: "Finance", start: 1976, end: 2008 },{ name: "LFT", category: "Retail", start: 1971, end: 1979 },
+{ name: "MND", category: "Retail", start: 1995, end: 2010 },
+{ name: "HCK", category: "Technology", start: 1987, end: 2011 }, { name: "BMC", category:
+"Technology", start: 1989, end: 2009 }, { name: "TIC", category: "Retail", start: 1993, end: 2005
+},{ name: "NAC", category: "Technology", start: 1991, end: 2010 },
+{ name: "ITC", category: "Finance", start: 1998, end: 2016 } ];
+const retailCompanies = companies.filter(company => 
+company.category === "Retail");
+console.log('The retail companies are')
+console.log(retailCompanies);
+const eightiesCompanies = companies.filter(company =>
+company.start >= 1980 & company.start < 1990);
+console.log('The eighties companies are')
+console.log(eightiesCompanies);
+const lastedMoreorequaltoTen = companies.filter(company =>
+(company.end - company.start) >= 10);
+console.log('The companies that have lasted for more than 10 years are')
+console.log(lastedMoreorequaltoTen);*/
+const age = [23,34,12,54,23,54,11,9,29,17,15,19,20,21,13,7];
+const Citizenship = age.filter(age =>
+age >= 18);
+console.log('The number of people who can apply for citizenship are')
+console.log(Citizenship)
+function calculateAverage(array) {
+    var total = 0;
+    var count = 0;
+
+    array.forEach(function(item, index) {
+        total += item;
+        count++;
+    });
+
+    return total / count;
+}
+console.log('The average age is');
+console.log(calculateAverage(age));
+</script>
+</body>
+</html>
