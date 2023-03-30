@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="username">Enter Github username:</label>
+            <input type="searchbar" placeholder="Enter username">
+            <button type="submit" id="btn">Search</button>
+        </form>
+    </div>
+    <div id="list"></div>
+    <script>
+        const form = document.querySelector('form');
+        const Searchbtn = document.querySelector('#btn');
+        const repoList = document.querySelector('list');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const username = document.querySelector('#username').value;
+            const apiUrl = `https://api.github.com/users/${username}/repos`;
+            fetch(apiUrl);
+            .then((response) => response.json())
+            .then((data) => {
+            repoList.innerHTML = '';
+            data.forEach((repo) => {
+              const li = document.createElement('li');
+              li.textContent = repo.name;
+              repoList.appendChild(li);
+            });
+          })
+          .catch((error) => console.error(error));
+      });
+    </script>
+</body>
+</html>
